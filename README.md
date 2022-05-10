@@ -1,7 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Michael-Melnik/php-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Michael-Melnik/php-project-lvl1/actions)
 
-[![lint](https://github.com/Michael-Melnik/php-progect-lvl1/actions/workflows/lint.yml/badge.svg)](https://github.com/Michael-Melnik/php-project-lvl1/actions/workflows/lint.yml)
+[![Lint](https://github.com/Michael-Melnik/php-project-lvl1/workflows/lint/badge.svg)](https://github.com/Michael-Melnik/php-project-lvl1/actions/workflows/lint.yml)
 
 ### Badges from Code Climate
  
