@@ -2,7 +2,12 @@
 [![Actions Status](https://github.com/Michael-Melnik/php-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Michael-Melnik/php-project-lvl1/actions)
 
 [![Lint](https://github.com/Michael-Melnik/php-project-lvl1/workflows/lint/badge.svg)](https://github.com/Michael-Melnik/php-project-lvl1/actions/workflows/lint.yml)
+<<<<<<< HEAD
 ### Badges from Code Climate:
+=======
+
+### Badges from Code Climate
+>>>>>>> e5cf6034cac0098a2cf0e2bde3ddf22de3246368
  
 <a href="https://codeclimate.com/github/Michael-Melnik/php-project-lvl1/maintainability"><img src="https://api.codeclimate.com/v1/badges/1ec87ff213eca9345a9e/maintainability" /></a>
 
