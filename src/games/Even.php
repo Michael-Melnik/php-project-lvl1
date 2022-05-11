@@ -2,14 +2,11 @@
 
 namespace Brain\Games\Even;
 
-use Brain\Games\core;
-
-use function cli\line;
-use function cli\prompt;
+use Brain\Games\Engine;
 
 function gameIsEven(): void
 {
-    core\runGame(game(core\QUESTION_COUNT));
+    Engine\runGame(game(Engine\QUESTION_COUNT));
 }
 
 

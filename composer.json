@@ -9,8 +9,9 @@
     "autoload": {
     	"files": [
             "src/Cli.php",
-            "src/core.php",
-            "src/games/Even.php"
+            "src/Engine.php",
+            "src/games/Even.php",
+            "src/games/Calc.php"
     	],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
