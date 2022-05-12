@@ -13,7 +13,8 @@
             "src/games/Even.php",
             "src/games/Calc.php",
             "src/games/Gcd.php",
-            "src/games/Progression.php"
+            "src/games/Progression.php",
+            "src/games/Prime.php"
     	],
         "psr-4": {
             "Hexlet\\Code\\": "src/"
