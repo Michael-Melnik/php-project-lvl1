@@ -26,5 +26,5 @@ function runGame(array $game): void
             exit();
         }
     }
-    line("Congratulation, %s", $userName);
+    line("Congratulations, %s", $userName);
 }
