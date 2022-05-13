@@ -22,7 +22,7 @@ function runGame(array $game): void
             line('Correct!');
         } else {
             line("'%s' is wrong answer ;(. Correct answer was '%s'", $userAnswer, $answer);
-            line("Let`s try again, %s!", $userName);
+            line("Let's try again, %s!", $userName);
             exit();
         }
     }
