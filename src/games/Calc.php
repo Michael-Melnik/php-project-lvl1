@@ -15,6 +15,7 @@ function game(int $questionCount): array
     $task = 'What is the result of the expression?';
     $questions = [];
     $operations = ['+','-','*'];
+    $answer = 0;
     for ($i = 0; $i < $questionCount; $i++) {
         $randomNumber1 = rand(1, 10);
         $randomNumber2 = rand(1, 10);
