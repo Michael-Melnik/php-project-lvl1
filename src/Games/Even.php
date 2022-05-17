@@ -8,7 +8,7 @@ const TASK = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function gameIsEven(): void
 {
-    Engine\runGame(CreateGameRules(Engine\QUESTION_COUNT, TASK));
+    Engine\runGame(createGameRules(Engine\QUESTION_COUNT, TASK));
 }
 
 function createGameRules(int $questionCount, string $task): array
