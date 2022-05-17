@@ -4,15 +4,15 @@ namespace Brain\Games\Gcd;
 
 use Brain\Games\Engine;
 
+const TASK = 'Find the greatest common divisor of given numbers.';
+
 function gameGcd(): void
 {
-    Engine\runGame(game(Engine\QUESTION_COUNT));
+    Engine\runGame(createGameRules(Engine\QUESTION_COUNT, TASK));
 }
 
-
-function game(int $questionCount): array
+function createGameRules(int $questionCount, string $task): array
 {
-    $task = 'Find the greatest common divisor of given numbers.';
     $questions = [];
     for ($i = 0; $i < $questionCount; $i++) {
         $randomNumber1 = rand(1, 20);

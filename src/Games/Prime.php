@@ -4,15 +4,15 @@ namespace Brain\Games\Prime;
 
 use Brain\Games\Engine;
 
+const TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 function primeGame(): void
 {
-    Engine\runGame(game(Engine\QUESTION_COUNT));
+    Engine\runGame(createGameRules(Engine\QUESTION_COUNT, TASK));
 }
 
-
-function game(int $questionCount): array
+function createGameRules(int $questionCount, string $task): array
 {
-    $task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
     $questions = [];
     for ($i = 0; $i < $questionCount; $i++) {
         $randomNumber = rand(1, 100);

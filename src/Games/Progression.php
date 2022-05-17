@@ -4,15 +4,15 @@ namespace Brain\Games\Progression;
 
 use Brain\Games\Engine;
 
+const TASK = 'What number is missing in the progression?';
+
 function progressionGame(): void
 {
-    Engine\runGame(game(Engine\QUESTION_COUNT));
+    Engine\runGame(createGameRules(Engine\QUESTION_COUNT, TASK));
 }
 
-
-function game(int $questionCount): array
+function createGameRules(int $questionCount, string $task): array
 {
-    $task = 'What number is missing in the progression?';
     $questions = [];
     for ($i = 0; $i < $questionCount; $i++) {
         $randomNumber = rand(1, 20);
