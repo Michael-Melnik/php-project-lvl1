@@ -25,7 +25,7 @@ function createGameRules(int $questionCount, string $task): array
     return [$task, $questions];
 }
 
-function isEven(int $number): string
+function isEven(int $number): bool
 {
     return $number % 2 === 0;
 }
