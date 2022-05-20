@@ -2,13 +2,15 @@
 
 namespace Brain\Games\Gcd;
 
-use Brain\Games\Engine;
+use function Brain\Games\Engine\runGame;
 
-const TASK = 'Find the greatest common divisor of given numbers.';
+use const Brain\Games\Engine\QUESTION_COUNT;
 
-function gameGcd(): void
+const GAME_DESCRIPTION = 'Find the greatest common divisor of given numbers.';
+
+function startGameGcd(): void
 {
-    Engine\runGame(createGameRules(Engine\QUESTION_COUNT, TASK));
+    runGame(createGameRules(QUESTION_COUNT, GAME_DESCRIPTION));
 }
 
 function createGameRules(int $questionCount, string $task): array

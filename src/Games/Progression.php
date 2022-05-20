@@ -2,13 +2,15 @@
 
 namespace Brain\Games\Progression;
 
-use Brain\Games\Engine;
+use function Brain\Games\Engine\runGame;
 
-const TASK = 'What number is missing in the progression?';
+use const Brain\Games\Engine\QUESTION_COUNT;
 
-function progressionGame(): void
+const GAME_DESCRIPTION = 'What number is missing in the progression?';
+
+function startProgressionGame(): void
 {
-    Engine\runGame(createGameRules(Engine\QUESTION_COUNT, TASK));
+    runGame(createGameRules(QUESTION_COUNT, GAME_DESCRIPTION));
 }
 
 function createGameRules(int $questionCount, string $task): array

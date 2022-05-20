@@ -2,13 +2,15 @@
 
 namespace Brain\Games\Prime;
 
-use Brain\Games\Engine;
+use function Brain\Games\Engine\runGame;
 
-const TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+use const Brain\Games\Engine\QUESTION_COUNT;
 
-function primeGame(): void
+const GAME_DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+function startPrimeGame(): void
 {
-    Engine\runGame(createGameRules(Engine\QUESTION_COUNT, TASK));
+    runGame(createGameRules(QUESTION_COUNT, GAME_DESCRIPTION));
 }
 
 function createGameRules(int $questionCount, string $task): array
@@ -25,12 +27,10 @@ function createGameRules(int $questionCount, string $task): array
 
 function isPrimeNumber(int $num): bool
 {
-    $flag = true;
     for ($i = 2; $i < $num; $i++) {
         if ($num % $i === 0) {
-            $flag = false;
-            break;
+            return false;
         }
     }
-    return $flag;
+    return true;
 }

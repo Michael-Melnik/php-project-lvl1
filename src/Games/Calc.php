@@ -2,13 +2,15 @@
 
 namespace Brain\Games\Calc;
 
-use Brain\Games\Engine;
+use function Brain\Games\Engine\runGame;
 
-const TASK = 'What is the result of the expression?';
+use const Brain\Games\Engine\QUESTION_COUNT;
 
-function gameCalc(): void
+const GAME_DESCRIPTION = 'What is the result of the expression?';
+
+function startCalcGame(): void
 {
-    Engine\runGame(createGameRules(Engine\QUESTION_COUNT, TASK));
+    runGame(createGameRules(QUESTION_COUNT, GAME_DESCRIPTION));
 }
 
 function createGameRules(int $questionCount, string $task): array

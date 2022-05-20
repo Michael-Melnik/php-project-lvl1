@@ -2,13 +2,15 @@
 
 namespace Brain\Games\Even;
 
-use Brain\Games\Engine;
+use function Brain\Games\Engine\runGame;
 
-const TASK = 'Answer "yes" if the number is even, otherwise answer "no".';
+use const Brain\Games\Engine\QUESTION_COUNT;
 
-function gameIsEven(): void
+const GAME_DESCRIPTION = 'Answer "yes" if the number is even, otherwise answer "no".';
+
+function startGameIsEven(): void
 {
-    Engine\runGame(createGameRules(Engine\QUESTION_COUNT, TASK));
+    runGame(createGameRules(QUESTION_COUNT, GAME_DESCRIPTION));
 }
 
 function createGameRules(int $questionCount, string $task): array
@@ -16,9 +18,14 @@ function createGameRules(int $questionCount, string $task): array
     $questions = [];
     for ($i = 0; $i < $questionCount; $i++) {
         $randomNumber = rand(1, 1000);
-        $answer = $randomNumber % 2 === 0 ? 'yes' : 'no';
+        $answer = isEven($randomNumber) ? 'yes' : 'no';
         $question = "{$randomNumber}";
         $questions[] = [$question, $answer];
     }
     return [$task, $questions];
+}
+
+function isEven(int $number): string
+{
+    return $number % 2 === 0;
 }
