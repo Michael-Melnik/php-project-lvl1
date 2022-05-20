@@ -10,19 +10,19 @@
 ### Setup:
 ```make install```
 
-[![setupsdfsd](https://asciinema.org/a/lm67Dmys4cOcT2Tvjj2iy5HQW.svg)](https://asciinema.org/a/lm67Dmys4cOcT2Tvjj2iy5HQW)
+[![setupsdfsd](https://asciinema.org/a/6pd3iTUEPRpmvxxNIDyBxajIR.svg)](https://asciinema.org/a/6pd3iTUEPRpmvxxNIDyBxajIR)
 
 ### Brain-even game:
-[![asciicast](https://asciinema.org/a/Csp6eUFvETpKYu7GYZErhuCrP.svg)](https://asciinema.org/a/Csp6eUFvETpKYu7GYZErhuCrP)
+[![asciicast](https://asciinema.org/a/AwnKfcDROuUVx2p4y8rqpHlFW.svg)](https://asciinema.org/a/AwnKfcDROuUVx2p4y8rqpHlFW)
 
 ### Brain-calc game:
-[![asciicast](https://asciinema.org/a/8mpgaMR2SiXd7bqcwrfcrxpoa.svg)](https://asciinema.org/a/8mpgaMR2SiXd7bqcwrfcrxpoa)
+[![asciicast](https://asciinema.org/a/AwnKfcDROuUVx2p4y8rqpHlFW.svg)](https://asciinema.org/a/AwnKfcDROuUVx2p4y8rqpHlFW)
 
 ### Brain-gcd game:
-[![asciicast](https://asciinema.org/a/ZVAtTsMNqeUNKc20UsZnvL7Mn.svg)](https://asciinema.org/a/ZVAtTsMNqeUNKc20UsZnvL7Mn)
+[![asciicast](https://asciinema.org/a/e1rTIZv344NPpCzqsXBry25EB.svg)](https://asciinema.org/a/e1rTIZv344NPpCzqsXBry25EB)
 
 ### Brain-progression game:
-[![asciicast](https://asciinema.org/a/mzN0LbTevGYCSuSH7aEe1afoh.svg)](https://asciinema.org/a/mzN0LbTevGYCSuSH7aEe1afoh)
+[![asciicast](https://asciinema.org/a/UhY8YKuYk2XHGfmBnClFCzAXj.svg)](https://asciinema.org/a/UhY8YKuYk2XHGfmBnClFCzAXj)
 
 ### Brain-prime game:
-[![asciicast](https://asciinema.org/a/GuLpqOi349YAMFJ0r8wv8zGBV.svg)](https://asciinema.org/a/GuLpqOi349YAMFJ0r8wv8zGBV)
+[![asciicast](https://asciinema.org/a/UhY8YKuYk2XHGfmBnClFCzAXj.svg)](https://asciinema.org/a/UhY8YKuYk2XHGfmBnClFCzAXj)
