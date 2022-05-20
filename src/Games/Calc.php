@@ -29,14 +29,19 @@ function createGameRules(int $questionCount, string $task): array
     return [$task, $questions];
 }
 
-function calculate(string $operation, int $num1, int $num2)
+function calculate(string $operation, int $num1, int $num2): int
 {
+    $result = 0;
     switch ($operation) {
         case '+':
-            return $num1 + $num2;
+            $result = $num1 + $num2;
+            break;
         case '-':
-            return $num1 - $num2;
+            $result = $num1 - $num2;
+            break;
         case '*':
-            return $num1 * $num2;
+            $result = $num1 * $num2;
+            break;
     }
+    return $result;
 }
