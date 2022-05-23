@@ -4,24 +4,19 @@ namespace Brain\Games\Progression;
 
 use function Brain\Games\Engine\runGame;
 
-use const Brain\Games\Engine\QUESTION_COUNT;
+use const Brain\Games\Engine\ROUND_COUNT;
 
 const GAME_DESCRIPTION = 'What number is missing in the progression?';
 
 function startProgressionGame(): void
 {
-    runGame(createGameRules(QUESTION_COUNT, GAME_DESCRIPTION));
-}
-
-function createGameRules(int $questionCount, string $task): array
-{
-    $questions = [];
-    for ($i = 0; $i < $questionCount; $i++) {
+    $questionsAndAnswer = [];
+    for ($i = 0; $i < ROUND_COUNT; $i++) {
         $randomNumber = rand(1, 20);
         [$question, $answer] = createProgression($randomNumber);
-        $questions[] = [$question, $answer];
+        $questionsAndAnswer[] = ['question' => $question, 'answer' => $answer];
     }
-    return [$task, $questions];
+    runGame(GAME_DESCRIPTION, $questionsAndAnswer);
 }
 
 function createProgression(int $startNum): array

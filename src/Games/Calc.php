@@ -4,29 +4,24 @@ namespace Brain\Games\Calc;
 
 use function Brain\Games\Engine\runGame;
 
-use const Brain\Games\Engine\QUESTION_COUNT;
+use const Brain\Games\Engine\ROUND_COUNT;
 
 const GAME_DESCRIPTION = 'What is the result of the expression?';
 
 function startCalcGame(): void
 {
-    runGame(createGameRules(QUESTION_COUNT, GAME_DESCRIPTION));
-}
-
-function createGameRules(int $questionCount, string $task): array
-{
-    $questions = [];
+    $questionsAndAnswer = [];
     $operations = ['+','-','*'];
-    $answer = 0;
-    for ($i = 0; $i < $questionCount; $i++) {
+//    $answer = 0;
+    for ($i = 0; $i < ROUND_COUNT; $i++) {
         $randomNumber1 = rand(1, 10);
         $randomNumber2 = rand(1, 10);
         $operation = $operations[rand(0, 2)];
         $answer = (string) calculate($operation, $randomNumber1, $randomNumber2);
         $question = "{$randomNumber1} {$operation} {$randomNumber2}";
-        $questions[] = [$question, $answer];
+        $questionsAndAnswer[] = ['question' => $question, 'answer' => $answer];
     }
-    return [$task, $questions];
+    runGame(GAME_DESCRIPTION, $questionsAndAnswer);
 }
 
 function calculate(string $operation, int $num1, int $num2): int
