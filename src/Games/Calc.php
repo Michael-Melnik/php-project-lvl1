@@ -11,8 +11,7 @@ const GAME_DESCRIPTION = 'What is the result of the expression?';
 function startCalcGame(): void
 {
     $questionsAndAnswer = [];
-    $operations = ['+','-','*'];
-//    $answer = 0;
+    $operations = ['+', '-', '*'];
     for ($i = 0; $i < ROUND_COUNT; $i++) {
         $randomNumber1 = rand(1, 10);
         $randomNumber2 = rand(1, 10);
@@ -26,17 +25,14 @@ function startCalcGame(): void
 
 function calculate(string $operation, int $num1, int $num2): int
 {
-    $result = 0;
     switch ($operation) {
         case '+':
-            $result = $num1 + $num2;
-            break;
+            return $num1 + $num2;
         case '-':
-            $result = $num1 - $num2;
-            break;
+            return $num1 - $num2;
         case '*':
-            $result = $num1 * $num2;
-            break;
+           return $num1 * $num2;
+        default:
+            throw new \Exception("Unknown operation: {$operation}!");
     }
-    return $result;
 }
